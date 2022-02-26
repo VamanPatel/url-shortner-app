@@ -31,15 +31,13 @@
       <mat-spinner *ngIf="showSpinner"></mat-spinner>
     </div>
     <div class="urlShow">
-      <a class="openUrl" (click)="openUrl()">{{
-        "http://localhost:4200/sdfsdfds"
-      }}</a>
-      <!-- <countdown
+      <a class="openUrl" (click)="openUrl()">{{ newUrl }}</a>
+      <countdown
         [config]="{ leftTime: 10, format: 's' }"
         (event)="handleEvent($event)"
         class="countDown"
-      ></countdown> -->
-      <span class="countDown">10</span>
+      ></countdown>
+      <!-- <span class="countDown">10</span> -->
     </div>
   </div>
 </div>
