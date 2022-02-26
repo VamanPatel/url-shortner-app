@@ -60,7 +60,7 @@ export class ShortUrlComponent implements OnInit {
     setTimeout(() => {
       this.api.shortUrl(req).subscribe(
         (res: any) => {
-          console.log(res);
+          // console.log(res);
           if (res.isSuccess) {
             this.url = '';
             this.newUrl =
@@ -76,7 +76,7 @@ export class ShortUrlComponent implements OnInit {
           }
         },
         (err) => {
-          console.log(err);
+          // console.log(err);
           this.hideUrl = false;
         }
       );
@@ -88,8 +88,6 @@ export class ShortUrlComponent implements OnInit {
   }
 
   handleEvent(e: any) {
-    console.log(e);
-
     if (e.action === 'done') {
       this.hideUrl = false;
     }

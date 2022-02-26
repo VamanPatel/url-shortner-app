@@ -26,7 +26,7 @@ export class ShowUrlComponent implements OnInit {
 
   getShortId(id: string) {
     this.api.getUrl(id).subscribe((res: any) => {
-      console.log(res);
+      // console.log(res);
       window.location.href = res.result.url;
     });
   }

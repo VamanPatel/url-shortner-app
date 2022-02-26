@@ -76,7 +76,30 @@
 @media (max-width: 550px) {
   .SecondPart {
     .urlShow {
-      width: 65%;
+      width: 65% !important;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .SecondPart {
+    .urlShow {
+      width: 80% !important;
+      justify-content: flex-start !important;
+    }
+    .openUrl {
+      font-size: 13px !important;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .SecondPart {
+    .urlShow {
+      width: 90% !important;
+      justify-content: flex-start !important;
+    }
+
+    .openUrl {
+      font-size: 13px !important;
     }
   }
 }
