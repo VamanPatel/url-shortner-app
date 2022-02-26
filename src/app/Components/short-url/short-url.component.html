@@ -30,7 +30,7 @@
     <div>
       <mat-spinner *ngIf="showSpinner"></mat-spinner>
     </div>
-    <div class="urlShow">
+    <div class="urlShow" *ngIf="hideUrl">
       <a class="openUrl" (click)="openUrl()">{{ newUrl }}</a>
       <countdown
         [config]="{ leftTime: 10, format: 's' }"
