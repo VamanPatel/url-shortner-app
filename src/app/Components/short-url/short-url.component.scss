@@ -1,0 +1,82 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .FirstPart {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .backGround {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(
+        90deg,
+        rgba(36, 228, 216, 0.4430147058823529) 0%,
+        rgba(39, 167, 151, 0.3981967787114846) 100%
+      );
+      justify-content: center;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 15px 9px rgb(0 0 0 / 30%);
+
+      .urlInput {
+        .mat-form-field {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .SecondPart {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .urlShow {
+      width: 50%;
+      /* text-align: center; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      position: relative;
+
+      .openUrl {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        font-family: monospace;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .countDown {
+        position: absolute;
+        right: 10px;
+        /* border: 1px solid; */
+        padding: 5px 10px;
+        background: bisque;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .SecondPart {
+    .urlShow {
+      width: 65%;
+    }
+  }
+}
