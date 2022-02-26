@@ -67,8 +67,6 @@ export class ShortUrlComponent implements OnInit {
               window.location.protocol +
               '//' +
               window.location.hostname +
-              ':' +
-              window.location.port +
               '/' +
               res.result.shortId;
 
